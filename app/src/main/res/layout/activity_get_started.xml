@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="getStartedVM" type="com.saturnosapplication.app.modules.getstarted.data.viewmodel.GetStartedVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnimgsplash"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <ImageView android:id="@+id/imageImgsplash"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_286pxh"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:layout_marginStart="@dimen/_17pxh"
+            android:layout_marginTop="@dimen/_102pxv"
+            android:layout_width="@dimen/_325pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_imgsplash"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_imgsplash"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnwelcometo"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:layout_marginStart="@dimen/_17pxh"
+            android:layout_marginTop="@dimen/_44pxv"
+            android:layout_width="wrap_content"
+            android:orientation="vertical" style="@style/groupStylecornerRadius">
+            <TextView android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtWelcometo"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_54pxh"
+                android:layout_marginStart="@dimen/_54pxh"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{getStartedVM.getStartedModel.txtWelcometo}"
+                style="@style/txtPoppinsbold24" tools:text="@string/lbl_welcome_to"/>
+            <TextView android:gravity="center_horizontal"
+                android:id="@+id/txtGreenBotaPNC"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_2pxh"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:layout_width="match_parent"
+                android:text="@{getStartedVM.getStartedModel.txtGreenBotaPNC}"
+                style="@style/txtPoppinsregular22" tools:text="@string/msg_greenbot_a_pnc"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnGetStarted"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_37pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_12pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_12pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_get_started"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded" tools:text="@string/lbl_get_started"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

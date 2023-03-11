@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.saturnosapplication.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.saturnosapplication.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.saturnosapplication.app.modules.privacyui.ui.PrivacyUiActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.saturnosapplication.app.modules.birthdayui.ui.BirthdayUiActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.saturnosapplication.app.modules.startconvo.ui.StartConvoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.saturnosapplication.app.modules.hlfgc.ui.HlFgcActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.saturnosapplication.app.modules.afterclickingthesostelephoneicon.ui.AfterClickingTheSosTelephoneIconActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.saturnosapplication.app.modules.menu.ui.MenuActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.saturnosapplication.app.modules.no.ui.NoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.saturnosapplication.app.modules.registrationui.ui.RegistrationUiActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.saturnosapplication.app.modules.forguidanceconsultation.ui.ForGuidanceConsultationActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true"
+            android:name="com.saturnosapplication.app.modules.getstarted.ui.GetStartedActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.saturnosapplication.app.modules.yes.ui.YesActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.saturnosapplication.app.modules.mhchotlines.ui.MhcHotlinesActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.saturnosapplication.app.modules.selfcare.ui.SelfCareActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.saturnosapplication.app.modules.loginui.ui.LoginUiActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="hlFgcVM" type="com.saturnosapplication.app.modules.hlfgc.data.viewmodel.HlFgcVM"/>
+    </data>
+    <LinearLayout android:gravity="start" android:id="@+id/linearHLFGC"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <ImageView android:id="@+id/imageArrowleft"
+            android:layout_height="@dimen/_26pxh"
+            android:layout_marginEnd="@dimen/_29pxh"
+            android:layout_marginStart="@dimen/_29pxh"
+            android:layout_marginTop="@dimen/_31pxv"
+            android:layout_width="@dimen/_26pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_arrowleft"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft"/>
+        <ImageView android:id="@+id/imageImghl"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_252pxh"
+            android:layout_marginEnd="@dimen/_22pxh"
+            android:layout_marginStart="@dimen/_22pxh"
+            android:layout_marginTop="@dimen/_145pxv"
+            android:layout_width="@dimen/_310pxh"
+            android:scaleType="fitXY" android:src="@drawable/img_imghl"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_imghl"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnHotlines"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_22pxh"
+            android:layout_marginStart="@dimen/_22pxh"
+            android:layout_marginTop="@dimen/_137pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_6pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_6pxv" android:singleLine="true"
+            android:text="@string/lbl_hotlines"
+            android:textAllCaps="false" style="@style/btnSolidRounded_2" tools:text="@string/lbl_hotlines"/>
+        <FrameLayout android:id="@+id/frameFgc"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_45pxv"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_22pxh"
+            android:layout_marginStart="@dimen/_22pxh"
+            android:layout_marginTop="@dimen/_31pxv"
+            android:layout_width="@dimen/_315pxh" style="@style/groupStylecornerRadius_1">
+            <TextView android:ellipsize="end"
+                android:gravity="top|start"
+                android:id="@+id/txtForguidanceco"
+                android:layout_gravity="bottom|center"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8pxv"
+                android:layout_marginEnd="@dimen/_43pxh"
+                android:layout_marginStart="@dimen/_43pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{hlFgcVM.hlFgcModel.txtForguidanceco}"
+                style="@style/txtPoppinsbold17_1" tools:text="@string/msg_for_guidance_co"/>
+            <View
+                android:background="@drawable/rectangle_bg_black_900_26_radius_22_5"
+                android:id="@+id/viewRectangleEight"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_45pxv" android:layout_width="@dimen/_315pxh"/>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

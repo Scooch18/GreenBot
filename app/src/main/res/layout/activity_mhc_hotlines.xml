@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="mhcHotlinesVM" type="com.saturnosapplication.app.modules.mhchotlines.data.viewmodel.MhcHotlinesVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearMHCHotlines"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <ImageView android:id="@+id/imageArrowleft"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_26pxh"
+            android:layout_marginEnd="@dimen/_29pxh"
+            android:layout_marginStart="@dimen/_29pxh"
+            android:layout_marginTop="@dimen/_31pxv"
+            android:layout_width="@dimen/_26pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_arrowleft"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft"/>
+        <TextView android:gravity="center_horizontal"
+            android:id="@+id/txtMentalHealthH"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_29pxh"
+            android:layout_marginStart="@dimen/_29pxh"
+            android:layout_marginTop="@dimen/_17pxv"
+            android:layout_width="match_parent"
+            android:text="@{mhcHotlinesVM.mhcHotlinesModel.txtMentalHealthH}"
+            style="@style/txtPoppinsbold27" tools:text="@string/msg_mental_health_h"/>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumncamera"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_31pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylegreen_800_54cornerRadius">
+            <ImageView android:id="@+id/imageCamera"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_8pxh"
+                android:layout_marginEnd="@dimen/_23pxh"
+                android:layout_marginStart="@dimen/_23pxh"
+                android:layout_marginTop="@dimen/_17pxv"
+                android:layout_width="@dimen/_30pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_camera_black_900"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_camera_black_900"/>
+            <TextView android:gravity="center_horizontal"
+                android:id="@+id/txtDescription"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_23pxh"
+                android:layout_marginStart="@dimen/_23pxh"
+                android:layout_marginTop="@dimen/_32pxv"
+                android:layout_width="match_parent"
+                android:text="@{mhcHotlinesVM.mhcHotlinesModel.txtDescription}"
+                style="@style/txtPoppinsregular16_1" tools:text="@string/msg_laguna_provinci"/>
+            <View android:background="@color/white_A700_77"
+                android:id="@+id/lineVector"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_2pxv"
+                android:layout_marginEnd="@dimen/_23pxh"
+                android:layout_marginStart="@dimen/_23pxh"
+                android:layout_marginTop="@dimen/_16pxv" android:layout_width="@dimen/_301pxh"/>
+            <TextView android:gravity="center_horizontal"
+                android:id="@+id/txtDescriptionOne"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_23pxh"
+                android:layout_marginStart="@dimen/_23pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                android:text="@{mhcHotlinesVM.mhcHotlinesModel.txtDescriptionOne}"
+                style="@style/txtPoppinsregular16_1" tools:text="@string/msg_national_center"/>
+            <View android:background="@color/white_A700_77"
+                android:id="@+id/lineVectorOne"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_2pxv"
+                android:layout_marginEnd="@dimen/_23pxh"
+                android:layout_marginStart="@dimen/_23pxh"
+                android:layout_marginTop="@dimen/_16pxv" android:layout_width="@dimen/_301pxh"/>
+            <TextView android:gravity="center_horizontal"
+                android:id="@+id/txtDescriptionTwo"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_23pxh"
+                android:layout_marginStart="@dimen/_23pxh"
+                android:layout_marginTop="@dimen/_11pxv"
+                android:layout_width="match_parent"
+                android:text="@{mhcHotlinesVM.mhcHotlinesModel.txtDescriptionTwo}"
+                style="@style/txtPoppinsregular16_1" tools:text="@string/msg_philippine_ment"/>
+            <View android:background="@color/white_A700_77"
+                android:id="@+id/lineVectorTwo"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_2pxv"
+                android:layout_marginBottom="@dimen/_20pxv"
+                android:layout_marginEnd="@dimen/_23pxh"
+                android:layout_marginStart="@dimen/_23pxh"
+                android:layout_marginTop="@dimen/_16pxv" android:layout_width="@dimen/_301pxh"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

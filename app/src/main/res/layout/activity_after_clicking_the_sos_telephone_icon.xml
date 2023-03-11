@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="afterClickingTheSosTelephoneIconVM" type="com.saturnosapplication.app.modules.afterclickingthesostelephoneicon.data.viewmodel.AfterClickingTheSosTelephoneIconVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearAfterclicking"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <ImageView android:id="@+id/imageImgprof"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_203pxh"
+            android:layout_marginEnd="@dimen/_37pxh"
+            android:layout_marginStart="@dimen/_37pxh"
+            android:layout_marginTop="@dimen/_171pxv"
+            android:layout_width="@dimen/_260pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_imgprof"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_imgprof"/>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumnyoupresstheb"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_161pxv"
+            android:layout_marginEnd="@dimen/_28pxh"
+            android:layout_marginStart="@dimen/_37pxh"
+            android:layout_marginTop="@dimen/_57pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <TextView android:gravity="center_horizontal"
+                android:id="@+id/txtYoupresstheb"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_width="match_parent"
+                android:text="@{afterClickingTheSosTelephoneIconVM.afterClickingTheSosTelephoneIconModel.txtYoupresstheb}"
+                style="@style/txtPoppinsbold17" tools:text="@string/msg_you_press_the_b"/>
+            <LinearLayout android:id="@+id/linearRowyes"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_44pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnYes"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:paddingBottom="@dimen/_16pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_16pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_yes"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRoundedOutline" tools:text="@string/lbl_yes"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnNo"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_29pxh"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:paddingBottom="@dimen/_16pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_16pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_no"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRoundedOutline_1" tools:text="@string/lbl_no"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

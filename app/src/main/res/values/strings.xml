@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">saturno_s_application</string>
+    <string name="loading">Loading?</string>
+    <string name="no_internet_connection">No internet connection!</string>
+    <string name="msg_sun_mon_tue">  SUN   MON   TUE   WED   THU   FRI   SAT
+</string>
+    <string name="lbl_next">Next</string>
+    <string name="msg_legal_and_polic">Legal and policies</string>
+    <string name="msg_don_t_have_an_a">Don\u2019t have an account? Sign-up</string>
+    <string name="lbl_no">No</string>
+    <string name="msg_philippine_ment">Philippine Mental Health Association - Laguna Chapter: 
+(049) 501-6571 or 0917-565-2036</string>
+    <string name="msg_take_a_breathin">Take a breathing exercises</string>
+    <string name="msg_already_have_an">Already have an account? Sign-in</string>
+    <string name="msg_hello_i_m_a_me">"Hello! I'm a Mental Health Chatbot here to support you."</string>
+    <string name="msg_enter_your_pass">Enter your password</string>
+    <string name="msg_i_agree_to_the">I agree to the terms and conditions</string>
+    <string name="lbl_bye">Bye</string>
+    <string name="lbl_sign_in">Sign-in</string>
+    <string name="lbl_march_10">March 10 </string>
+    <string name="msg_daily_breathing">Daily Breathing Exercises</string>
+    <string name="lbl_yes">Yes</string>
+    <string name="msg_national_center">National Center for Mental Health Crisis Hotline: 
+(0917) 899-8727 or (02) 8989-8727</string>
+    <string name="msg_we_will_send_yo">We will send your schedule with our guidance counselor on your email</string>
+    <string name="lbl_get_started">Get Started</string>
+    <string name="lbl_sign_up"> Sign-Up!</string>
+    <string name="lbl_sign_up2">Sign-up</string>
+    <string name="msg_account_setting">Account Settings</string>
+    <string name="msg_terms_of_servic2">Terms of Service</string>
+    <string name="msg_mental_health_h">Mental Health Hotlines</string>
+    <string name="lbl_privacy_policy">Privacy Policy</string>
+    <string name="lbl_register">Register</string>
+    <string name="lbl_sample">Sample</string>
+    <string name="msg_choose_your_dat">Choose your Date of Birth</string>
+    <string name="msg_sun_mon_tue2">SUN   MON   TUE   WED   THU   FRI   SAT
+</string>
+    <string name="msg_sent_a_message">Sent a message...</string>
+    <string name="msg_our_mental_heal">Our Mental Health ChatBot is committed to protecting the privacy of its users. We collect information such as age, and mental health symptoms to provide personalized support and resources. However, we do not disclose or share this information with any third-party without the explicit consent of the user. We also use appropriate security measures to protect your personal data from unauthorized access, modification, or disclosure.
+
+Terms of Service&#xd;
+&#xd;
+By using our Mental Health ChatBot, you agree to the following terms of service:
+The Mental Health ChatBot is not intended to be a substitute for professional medical advice, diagnosis, or treatment. 
+The Mental Health ChatBot is not responsible for any damages or losses arising from the use of the service.</string>
+    <string name="msg_by_using_our_me">&#xd;
+By using our Mental Health ChatBot, you agree to the following terms of service:
+The Mental Health ChatBot is not intended to be a substitute for professional medical advice, diagnosis, or treatment. 
+The Mental Health ChatBot is not responsible for any damages or losses arising from the use of the service.</string>
+    <string name="lbl_hello_there">Hello! there</string>
+    <string name="msg_how_your_feelin">How your feeling today?</string>
+    <string name="lbl_licenses">Licenses</string>
+    <string name="lbl_sign_out">Sign-out</string>
+    <string name="lbl_hi">Hi!</string>
+    <string name="msg_do_you_want_to">Do you want to continue our conversation for now?</string>
+    <string name="msg_what_would_you">What would you like to talk about for now?</string>
+    <string name="msg_laguna_provinci">Laguna Provincial Mental Health Helpline: 
+(049) 502-0555 or 0919-077-2222</string>
+    <string name="msg_don_t_have_an_a2">Don\u2019t have an account? </string>
+    <string name="msg_example_gmail_c">example@gmail.com</string>
+    <string name="msg_are_you_sure_yo">Are you sure you\u2019re signing out?</string>
+    <string name="lbl_goodbye">Goodbye.</string>
+    <string name="lbl_greenbot">GreenBot</string>
+    <string name="msg_already_have_an2">Already have an account? </string>
+    <string name="msg_our_mental_heal2">Our Mental Health ChatBot is committed to protecting the privacy of its users. We collect information such as age, and mental health symptoms to provide personalized support and resources. However, we do not disclose or share this information with any third-party without the explicit consent of the user. We also use appropriate security measures to protect your personal data from unauthorized access, modification, or disclosure.
+
+</string>
+    <string name="msg_for_guidance_co">for guidance consultation</string>
+    <string name="msg_enter_your_emai">Enter your email</string>
+    <string name="lbl_welcome_back">Welcome Back!</string>
+    <string name="msg_terms_of_servic">Terms of Service&#xd;
+</string>
+    <string name="msg_day_mon">Day   |     Month                        |  Year</string>
+    <string name="lbl_self_care">Self-Care</string>
+    <string name="lbl_password">Password</string>
+    <string name="lbl_welcome_to">Welcome to:</string>
+    <string name="msg_greenbot_a_pnc">GreenBot: a PNC Mental Health Chatbot</string>
+    <string name="msg_5_6">       5        6         7        8        9       10      11</string>
+    <string name="msg_this_won_t_be_s">This won\u2019t be set on public by default. Some of the conversations is age-specific</string>
+    <string name="lbl_hotlines">Hotlines</string>
+    <string name="msg_you_press_the_b">You press the button, it seems that you want a professional help?</string>
+    <string name="msg_confirm_your_pa">Confirm your password</string>
+    <string name="lbl_enter_your_name">Enter your name</string>
+    <string name="lbl_account">Account</string>
+    <string name="msg_please_type_you">Please type your email</string>
+    <string name="msg_please_enter_valid_email">Please enter valid email</string>
+    <string name="msg_please_enter_valid_pa">Please enter valid password</string>
+    <string name="msg_this_contact_has_no_phone_nu">This contact has no phone number</string>
+    <string name="msg_camera_storage_permission">This Application need permission\n1.Camera permission to capture the image.\n2.Storage Access permission to save the captured image.</string>
+    <string name="lbl_camera">Camera</string>
+    <string name="lbl_gallery">Gallery</string>
+</resources>

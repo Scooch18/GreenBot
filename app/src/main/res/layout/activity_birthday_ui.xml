@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="birthdayUiVM" type="com.saturnosapplication.app.modules.birthdayui.data.viewmodel.BirthdayUiVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearBirthdayUI"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <TextView android:gravity="center_horizontal"
+            android:id="@+id/txtChooseyourDat"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_23pxh"
+            android:layout_marginStart="@dimen/_23pxh"
+            android:layout_marginTop="@dimen/_72pxv"
+            android:layout_width="match_parent"
+            android:text="@{birthdayUiVM.birthdayUiModel.txtChooseyourDat}"
+            style="@style/txtPoppinsbold32" tools:text="@string/msg_choose_your_dat"/>
+        <EditText
+            android:background="@drawable/rectangle_border_black_900_radius_15"
+            android:ellipsize="end" android:hint="@string/msg_day_mon"
+            android:id="@+id/etLanguage" android:inputType="text"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_23pxh"
+            android:layout_marginStart="@dimen/_23pxh"
+            android:layout_marginTop="@dimen/_46pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_16pxv"
+            android:paddingEnd="@dimen/_20pxh"
+            android:paddingStart="@dimen/_18pxh"
+            android:paddingTop="@dimen/_19pxv" android:singleLine="true"
+            android:text="@={birthdayUiVM.birthdayUiModel.etLanguageValue}"
+            android:textColorHint="@color/black_900_6b"
+            style="@style/etRoundedOutline" tools:ignore="Autofill"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnNext"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_58pxv"
+            android:layout_marginEnd="@dimen/_23pxh"
+            android:layout_marginStart="@dimen/_23pxh"
+            android:layout_marginTop="@dimen/_25pxv"
+            android:layout_width="@dimen/_264pxh"
+            android:paddingBottom="@dimen/_12pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_12pxv" android:singleLine="true"
+            android:text="@string/lbl_next" android:textAllCaps="false"
+            style="@style/btnSolidRounded" tools:text="@string/lbl_next"/>
+        <TextView android:gravity="center_horizontal"
+            android:id="@+id/txtThiswontbes"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_23pxh"
+            android:layout_marginStart="@dimen/_23pxh"
+            android:layout_marginTop="@dimen/_15pxv"
+            android:layout_width="match_parent"
+            android:text="@{birthdayUiVM.birthdayUiModel.txtThiswontbes}"
+            style="@style/txtPoppinsregular10" tools:text="@string/msg_this_won_t_be_s"/>
+    </LinearLayout>
+</layout>

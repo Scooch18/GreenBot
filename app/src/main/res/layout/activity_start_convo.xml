@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="startConvoVM" type="com.saturnosapplication.app.modules.startconvo.data.viewmodel.StartConvoVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearColumnmenu"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_1pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:contentInsetStart="0dp" style="@style/groupStylegreen_800">
+            <LinearLayout android:id="@+id/linearRowmenu"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_18pxv"
+                android:layout_marginEnd="@dimen/_22pxh"
+                android:layout_marginStart="@dimen/_19pxh"
+                android:layout_marginTop="@dimen/_28pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageMenu"
+                    android:layout_height="@dimen/_17pxh"
+                    android:layout_marginBottom="@dimen/_5pxv"
+                    android:layout_marginTop="@dimen/_4pxv"
+                    android:layout_width="@dimen/_22pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_menu"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_menu"/>
+                <LinearLayout android:id="@+id/linearRowgreenbot"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_94pxh"
+                    android:layout_weight="0.9"
+                    android:layout_width="0dp" android:orientation="horizontal">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtGreenBot"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.67"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{startConvoVM.startConvoModel.txtGreenBot}"
+                        style="@style/txtPoppinsbold18" tools:text="@string/lbl_greenbot"/>
+                    <ImageView android:id="@+id/imageCall"
+                        android:layout_height="@dimen/_21pxh"
+                        android:layout_marginBottom="@dimen/_4pxv"
+                        android:layout_marginStart="@dimen/_48pxh"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_width="@dimen/_21pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_call"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_call"/>
+                    <ImageView android:id="@+id/imageWarning"
+                        android:layout_height="@dimen/_20pxh"
+                        android:layout_marginBottom="@dimen/_4pxv"
+                        android:layout_marginStart="@dimen/_22pxh"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_width="@dimen/_20pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_warning"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_warning"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout android:id="@+id/linearColumnhelloimame"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_395pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearMHCReply"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_26pxh"
+                android:layout_marginStart="@dimen/_26pxh"
+                android:layout_width="wrap_content"
+                android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+                <TextView android:gravity="center_horizontal"
+                    android:id="@+id/txtHelloImaMe"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_7pxv"
+                    android:layout_marginEnd="@dimen/_12pxh"
+                    android:layout_marginStart="@dimen/_21pxh"
+                    android:layout_marginTop="@dimen/_12pxv"
+                    android:layout_width="match_parent"
+                    android:text="@{startConvoVM.startConvoModel.txtHelloImaMe}"
+                    style="@style/txtPoppinsregular13" tools:text="@string/msg_hello_i_m_a_me"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearColumnrectanglesix"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_25pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylegray_50cornerRadius">
+                <View
+                    android:background="@drawable/rectangle_bg_gray_401_radius_4_5"
+                    android:id="@+id/viewRectangleSix"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_9pxv"
+                    android:layout_marginEnd="@dimen/_26pxh"
+                    android:layout_marginStart="@dimen/_26pxh"
+                    android:layout_marginTop="@dimen/_9pxv" android:layout_width="@dimen/_45pxh"/>
+                <EditText
+                    android:background="@drawable/rectangle_bg_gray_100_radius_15"
+                    android:drawableEnd="@drawable/img_send"
+                    android:drawablePadding="@dimen/_30pxh"
+                    android:ellipsize="end"
+                    android:hint="@string/msg_sent_a_message"
+                    android:id="@+id/etImgchat" android:inputType="text"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_21pxh"
+                    android:layout_marginStart="@dimen/_26pxh"
+                    android:layout_marginTop="@dimen/_13pxv"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_14pxv"
+                    android:paddingEnd="@dimen/_18pxh"
+                    android:paddingStart="@dimen/_24pxh"
+                    android:paddingTop="@dimen/_18pxv"
+                    android:singleLine="true"
+                    android:text="@={startConvoVM.startConvoModel.etImgchatValue}"
+                    android:textColorHint="@color/black_900_6b"
+                    style="@style/etSolidRounded_1" tools:ignore="Autofill"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtHi"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_42pxh"
+                    android:layout_marginStart="@dimen/_42pxh"
+                    android:layout_marginTop="@dimen/_12pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{startConvoVM.startConvoModel.txtHi}"
+                    style="@style/txtPoppinsregular14_1" tools:text="@string/lbl_hi"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtHellothere"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_42pxh"
+                    android:layout_marginStart="@dimen/_42pxh"
+                    android:layout_marginTop="@dimen/_8pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{startConvoVM.startConvoModel.txtHellothere}"
+                    style="@style/txtPoppinsregular14_1" tools:text="@string/lbl_hello_there"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtGoodbye"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_20pxv"
+                    android:layout_marginEnd="@dimen/_42pxh"
+                    android:layout_marginStart="@dimen/_42pxh"
+                    android:layout_marginTop="@dimen/_12pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{startConvoVM.startConvoModel.txtGoodbye}"
+                    style="@style/txtPoppinsregular14_1" tools:text="@string/lbl_goodbye"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
