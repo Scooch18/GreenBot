@@ -514,17 +514,33 @@
             android:paddingTop="@dimen/_12pxv" android:singleLine="true"
             android:text="@string/lbl_sign_in"
             android:textAllCaps="false" style="@style/btnSolidRounded" tools:text="@string/lbl_sign_in"/>
-        <TextView android:ellipsize="end"
-            android:gravity="center_horizontal"
-            android:id="@+id/txtConfirmation"
-            android:layout_height="wrap_content"
+        <FrameLayout android:id="@+id/frameStackconfirmation"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_24pxv"
             android:layout_marginBottom="@dimen/_20pxv"
             android:layout_marginEnd="@dimen/_23pxh"
             android:layout_marginStart="@dimen/_23pxh"
-            android:layout_marginTop="@dimen/_19pxv"
-            android:layout_width="match_parent"
-            android:singleLine="true"
-            android:text="@{loginUiVM.loginUiModel.txtConfirmation}"
-            style="@style/txtPoppinsregular16_1" tools:text="@string/msg_don_t_have_an_a"/>
+            android:layout_marginTop="@dimen/_19pxv" android:layout_width="@dimen/_258pxh">
+            <TextView android:ellipsize="end"
+                android:gravity="top|start"
+                android:id="@+id/txtConfirmation"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{loginUiVM.loginUiModel.txtConfirmation}"
+                android:textColor="@color/black"
+                style="@style/txtPoppinsregular16_1" tools:text="Don't have an account?"/>
+            <TextView android:ellipsize="end"
+                android:gravity="end"
+                android:id="@+id/txtConfirmationOne"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:textColor="@color/green_800"
+                style="@style/txtPoppinsregular16_1" tools:text="Sign-up"/>
+        </FrameLayout>
+
     </LinearLayout>
 </layout>
